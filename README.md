@@ -1,6 +1,6 @@
 ---
-name: Xamarin.Android - Hello World
-description: "A simple hello world application that uses a TextView to display a 'hello world' message via a string resource (get started)"
+name: Xamarin.Android - Phoneword
+description: "Sample app for the article, Hello, Android (Quickstart). This version of Phoneword incorporates all of the functionality... (get started)"
 page_type: sample
 languages:
 - csharp
@@ -9,11 +9,13 @@ products:
 extensions:
     tags:
     - getstarted
-urlFragment: helloworld
+urlFragment: phoneword
 ---
-# Hello World for Xamarin.Android
+# Phoneword
 
-This is a super simple hello world application. It uses a TextView to
-display a plain old hello world message via a string resource.
-
-![Simple Android app](Screenshot/HelloWorld.png)
+This sample app accompanies the article,
+[Hello, Android (Quickstart)](https://docs.microsoft.com/xamarin/android/get-started/hello-android/hello-android-quickstart).
+This version of **Phoneword** incorporates all of the functionality
+explained in this article, and it can be used as the starting point for
+the article,
+[Hello, Android Multiscreen (Quickstart)](https://docs.microsoft.com/xamarin/android/get-started/hello-android-multiscreen/hello-android-multiscreen-quickstart).
