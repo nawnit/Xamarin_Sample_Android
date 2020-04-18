@@ -13,6 +13,7 @@ variables:
   buildConfiguration: 'Release'
   outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
 
+
 steps:
 - task: NuGetToolInstaller@1
 
@@ -25,3 +26,13 @@ steps:
     projectFile: '**/*.csproj'
     outputDirectory: '$(outputDirectory)'
     configuration: '$(buildConfiguration)'
+
+- task: AppCenterDistribute@3
+  inputs:
+    serverEndpoint: 'AP_VS_SVC'
+    appSlug: 'nawnit86/XamarinAndroidSampleApp'
+    appFile: '**/*.apk'
+    symbolsOption: 'Android'
+    releaseNotesOption: 'input'
+    releaseNotesInput: 'First android pipeline release'
+    destinationType: 'groups'
