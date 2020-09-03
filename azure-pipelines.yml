@@ -30,7 +30,7 @@ steps:
 - task: AppCenterDistribute@3
   inputs:
     serverEndpoint: 'AP_VS_SVC'
-    appSlug: 'nawnit86/XamarinAndroidSampleApp'
+    appSlug: 'nawnit86/XamarinFirstAPp'
     appFile: '**/*.apk'
     symbolsOption: 'Android'
     releaseNotesOption: 'input'
